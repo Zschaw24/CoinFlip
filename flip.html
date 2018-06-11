@@ -1,0 +1,67 @@
+<html>
+<head>
+
+<title>Coin Toss Game</title>
+<link rel="stylesheet" type="text/css" href="flip.css">
+
+</head>
+
+<body>
+<center><h1>Coin Toss Game</h1></center>
+<center><h3>Give the coin a toss!</h3></center>
+<center><canvas id='coin' width= '500' height= '500' style="border:1px solid #000000">
+
+</canvas><center>
+
+<br><button type="button" onclick="Random()" id='click'>Give it a toss!</button></br>
+
+<div>
+<p><b>Results:</b></p>
+<p id="number">------</p>
+
+
+<p id='list'>- </p>
+<p> <b>All time heads:<b></p>
+<p id='totalheads'></p>
+<p><b> All time tails: <b></p>
+<p id= 'totaltails'></p>
+
+
+
+
+</div>
+<br></br>
+<buttton type="button" onclick="Resetresults()" id='click3'>RESET RESULTS BOX</button>
+  <br></br>
+<br><buttton type="button" onclick="Reset()" id='click2'>RESET TOTAL HEADS AND TAILS</button></br>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBhLqJMJ72diXv-4luT_V-MT7p6YLpUO6k",
+    authDomain: "coin-flip-final.firebaseapp.com",
+    databaseURL: "https://coin-flip-final.firebaseio.com",
+    projectId: "coin-flip-final",
+    storageBucket: "",
+    messagingSenderId: "539007447186"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="flip.js">
+</script>
+
+</body>
+
+
+
+
+
+</html>
